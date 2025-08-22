@@ -4,11 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMKN6 Malang - Excellence in Education</title>
+    <meta name="description" content="SMKN6 Malang - Learn Programming and Technology. Excellence in Education with Vision for Future Innovation." />
+    <meta name="author" content="SMKN6 Malang" />
+    <meta name="keywords" content="SMKN6, Malang, Vocational School, Programming, Technology, Education" />
+
+    <meta property="og:title" content="SMKN6 Malang - Excellence in Education" />
+    <meta property="og:description" content="Learn Programming and Technology at SMKN6 Malang. Excellence in Education with Vision for Future Innovation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="peler.png" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="peler.png" rel="shortcut icon"
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">SMKN6</div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -35,26 +57,55 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <p class="hero-subtitle">Learn Programming in This School</p>
-                    <h1 class="hero-title">Sustainable <span class="text-primary">Progress</span></h1>
+                    <div class="hero-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Learn Programming in This School</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Sustainable <span class="text-gradient">Progress</span>
+                    </h1>
                     <p class="hero-description">
                         Be a reliable and cool student. Join SMKN6 Malang and unlock your potential in technology and innovation.
                     </p>
                     <div class="hero-buttons">
                         <a href="https://smkn6malang.sch.id/" target="_blank" class="btn btn-primary">
-                            Learn More
+                            <span>Learn More</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
-                        <a href="#profile" class="btn btn-outline">Discover More</a>
+                        <a href="#profile" class="btn btn-outline">
+                            <span>Discover More</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Students</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Programs</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Years</div>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="SMK6.png" alt="SMKN6 Malang School Building">
-                        <div class="image-bg"></div>
+                        <img src="SMK6.png" alt="SMKN6 Malang School Building" class="hero-img">
+                        <div class="image-overlay"></div>
                     </div>
                 </div>
             </div>
@@ -66,13 +117,16 @@
         <div class="container">
             <div class="profile-content">
                 <div class="profile-text">
-                    <p class="section-subtitle">You Need To Know This</p>
+                    <div class="section-badge">
+                        <i class="fas fa-info-circle"></i>
+                        <span>You Need To Know This</span>
+                    </div>
                     <h2 class="section-title">Vision And Mission</h2>
                     
                     <div class="vision-mission">
                         <div class="card vision-card">
                             <div class="card-content">
-                                <div class="card-icon">
+                                <div class="card-icon vision-icon">
                                     <i class="fas fa-bullseye"></i>
                                 </div>
                                 <div class="card-text">
@@ -84,7 +138,7 @@
                         
                         <div class="card mission-card">
                             <div class="card-content">
-                                <div class="card-icon">
+                                <div class="card-icon mission-icon">
                                     <i class="fas fa-users"></i>
                                 </div>
                                 <div class="card-text">
@@ -98,7 +152,8 @@
                 
                 <div class="profile-image">
                     <div class="image-container">
-                        <img src="smkbisa.png" alt="School Activities">
+                        <img src="smkbisa.png" alt="School Activities" class="profile-img">
+                        <div class="image-decoration"></div>
                     </div>
                 </div>
             </div>
@@ -114,47 +169,59 @@
             </div>
             
             <div class="skills-grid">
-                <div class="skill-card">
+                <div class="skill-card" data-skill="football">
                     <div class="skill-image">
                         <img src="fahrizal-sepakbola.jpeg" alt="Football">
                         <div class="skill-overlay red-overlay"></div>
                     </div>
                     <div class="skill-content">
-                        <i class="fas fa-trophy"></i>
+                        <div class="skill-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
                         <h3>Football</h3>
+                        <p>Competitive football training and tournaments</p>
                     </div>
                 </div>
                 
-                <div class="skill-card">
+                <div class="skill-card" data-skill="volleyball">
                     <div class="skill-image">
                         <img src="poli.png" alt="Volleyball">
                         <div class="skill-overlay blue-overlay"></div>
                     </div>
                     <div class="skill-content">
-                        <i class="fas fa-trophy"></i>
+                        <div class="skill-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
                         <h3>Volleyball</h3>
+                        <p>Team volleyball and competitive matches</p>
                     </div>
                 </div>
                 
-                <div class="skill-card">
+                <div class="skill-card" data-skill="martial-arts">
                     <div class="skill-image">
                         <img src="perisai-diri.jpeg" alt="Perisai Diri">
                         <div class="skill-overlay green-overlay"></div>
                     </div>
                     <div class="skill-content">
-                        <i class="fas fa-trophy"></i>
+                        <div class="skill-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
                         <h3>Perisai Diri</h3>
+                        <p>Traditional Indonesian martial arts training</p>
                     </div>
                 </div>
                 
-                <div class="skill-card">
+                <div class="skill-card" data-skill="kickboxing">
                     <div class="skill-image">
                         <img src="kicboxing-2024.jpeg" alt="Kickboxing">
                         <div class="skill-overlay purple-overlay"></div>
                     </div>
                     <div class="skill-content">
-                        <i class="fas fa-trophy"></i>
+                        <div class="skill-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
                         <h3>Kickboxing</h3>
+                        <p>Modern kickboxing techniques and fitness</p>
                     </div>
                 </div>
             </div>
@@ -173,7 +240,7 @@
                     
                     <div class="contact-details">
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon address-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-text">
@@ -183,7 +250,7 @@
                         </div>
                         
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon phone-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-text">
@@ -193,7 +260,7 @@
                         </div>
                         
                         <div class="contact-item">
-                            <div class="contact-icon">
+                            <div class="contact-icon email-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-text">
@@ -219,7 +286,10 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -240,6 +310,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Success Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span>Message sent successfully!</span>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
